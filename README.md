@@ -1,7 +1,6 @@
-# Karabiner-SculptMouse
-Microsoft Sculpt Comfort Mouse Binding for OSX (using Karabiner). Modified by adrianhuang, midnightsalesman, original by user inceax
+# Karabiner private.xml for the Sculpt Comfort Mouse
+Forked version of the original private.xml written by xinhuang327, adrianhuang, midnightsalesman and originally by inceax.
 
-* Slide Up to switch to right desktop space
-* Slide Down to switch to left desktop space
-* Press Windows button to open Mission Control
-* Other rules are not used.
+I added more functionalities and I hope someone else will be interested in it!
+
+<img src="http://s14.postimg.org/bv0zxm8o1/Screenshot.png" />

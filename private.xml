@@ -1,100 +1,262 @@
 <!--
 Microsoft Sculpt Comfort Mouse Binding for OSX (using Karabiner)
-modified by adrianhuang, midnightsalesman, original by user inceax
+modified by xinhuand327, adrianhuang, midnightsalesman, original by user inceax
 -->
 <?xml version="1.0"?>
-    <root>
-        <devicevendordef>
-            <vendorname>MICROSOFT</vendorname>
-            <vendorid>0x045e</vendorid>
-        </devicevendordef>
-        <deviceproductdef>
-            <productname>SCULPT_COMFORT</productname>
-            <productid>0x07a2</productid>
-        </deviceproductdef>
-        <item>
-            <name>Slide Up to Backward (Microsoft Sculpt Comfort Mouse)</name>
-            <identifier>com.microsoft.mouse.sculpt_comfort.slide_up</identifier>
-            <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
-            <autogen>
-                __KeyToKey__
-       KeyCode::DELETE, ModifierFlag::CONTROL_L,
-       KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L
+ <root>   
+  <devicevendordef>
+     <vendorname>MICROSOFT</vendorname>
+     <vendorid>0x045e</vendorid>
+   </devicevendordef>
+  <deviceproductdef>
+     <productname>SCULPT_COMFORT</productname>
+     <productid>0x07a2</productid>
+   </deviceproductdef>
+  <appdef>
+    <appname>SPOTIFY</appname>
+    <equal>com.spotify.client</equal>
+  </appdef>
+  <item>
+     <name>Spotify Next Track (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_rightmod.spotify</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <only>SPOTIFY</only>
+     <autogen>
+       __ScrollWheelToKey__
+       ScrollWheel::RIGHT | ModifierFlag::COMMAND_L,
+       KeyCode::CURSOR_RIGHT | ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L
      </autogen>
-        </item>
-        <item>
-            <name>Slide Down to Forward (Microsoft Sculpt Comfort Mouse)</name>
-            <identifier>com.microsoft.mouse.sculpt_comfort.slide_down</identifier>
-            <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
-            <autogen>
-                __KeyToKey__
-       KeyCode::TAB, ModifierFlag::CONTROL_L,
-       KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L
+   </item>
+   <item>
+     <name>Spotify Previous Track (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_leftmod.spotify</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <only>SPOTIFY</only>
+     <autogen>
+       __ScrollWheelToKey__
+       ScrollWheel::LEFT | ModifierFlag::COMMAND_L,
+       KeyCode::CURSOR_LEFT | ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L
      </autogen>
-        </item>
-        <item>
-            <name>Windows Button to LaunchPad (Microsoft Sculpt Comfort Mouse)</name>
-            <identifier>com.microsoft.mouse.sculpt_comfort.win_button</identifier>
-            <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
-            <autogen>
-                __KeyToKey__
-       KeyCode::COMMAND_L, ModifierFlag::CONTROL_L, 
-        KeyCode::VK_NONE
-         </autogen>
-            <autogen>
-                __KeyToKey__
-       KeyCode::COMMAND_L, 
-        KeyCode::MISSION_CONTROL
-         </autogen>
-        </item>
-        <item>
-            <name>Scroll Left to Backward (Microsoft Sculpt Comfort Mouse)</name>
-            <identifier>com.microsoft.mouse.sculpt_comfort.scroll_left</identifier>
-            <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
-            <autogen>
-                __ScrollWheelToKey__
-       ScrollWheel::LEFT,
-       KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L
-     </autogen>
-        </item>
-        <item>
-            <name>Scroll Right to Forward (Microsoft Sculpt Comfort Mouse)</name>
-            <identifier>com.microsoft.mouse.sculpt_comfort.scroll_right</identifier>
-            <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
-            <autogen>
-                __ScrollWheelToKey__
+   </item>
+  <item>
+     <name>Spotify Go Forward (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_right.spotify</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <only>SPOTIFY</only>
+     <autogen>
+       __ScrollWheelToKey__
        ScrollWheel::RIGHT,
-       KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L
+       KeyCode::CURSOR_RIGHT | ModifierFlag::COMMAND_L,
      </autogen>
-        </item>
-        <item>
-            <name>Scroll Left to Backward Space(Microsoft Sculpt Comfort Mouse)</name>
-            <identifier>com.microsoft.mouse.sculpt_comfort.scroll_leftspace</identifier>
-            <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
-            <autogen>
-                __ScrollWheelToKey__
+   </item>
+   <item>
+     <name>Spotify Go Back (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.middleclick.spotify</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <only>SPOTIFY</only>
+     <autogen>
+       __ScrollWheelToKey__
        ScrollWheel::LEFT,
-       KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L
+       KeyCode::CURSOR_LEFT | ModifierFlag::COMMAND_L
      </autogen>
-        </item>
-        <item>
-            <name>Scroll Right to Forward Space(Microsoft Sculpt Comfort Mouse)</name>
-            <identifier>com.microsoft.mouse.sculpt_comfort.scroll_rightspace</identifier>
-            <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
-            <autogen>
-                __ScrollWheelToKey__
-       ScrollWheel::RIGHT,
-       KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L
-     </autogen>
-        </item>
-        <item>
-            <name>Mouse Middle Button to Mission Control(Microsoft Sculpt Comfort Mouse)</name>
-            <identifier>com.microsoft.mouse.sculpt_comfort.scroll_middle</identifier>
-            <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
-            <autogen>
-                __KeyToKey__
+   </item>
+   <item>
+     <name>Spotify Pause (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_left.spotify</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <only>SPOTIFY</only>
+     <autogen>
+       __PointingButtonToKey__
        PointingButton::MIDDLE,
-       KeyCode::MISSION_CONTROL,
+       KeyCode::SPACE
      </autogen>
-        </item>
-    </root>
+   </item>
+   <item>
+     <name>Windows Button plus Mouse Right Button to Open a New Tab in Browser (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_leftmod</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <only>SAFARI, GOOGLE_CHROME, FIREFOX</only>
+     <autogen>
+       __PointingButtonToKey__
+       PointingButton::RIGHT, ModifierFlag::COMMAND_L,
+       KeyCode::T, ModifierFlag::COMMAND_L
+     </autogen>
+  </item>
+  <item>
+     <name>Windows Button plus Middle Click to Hide the Window (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.leftmod</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <not>SAFARI, FIREFOX, GOOGLE_CHROME</not>
+     <autogen>
+       __PointingButtonToKey__
+       PointingButton::MIDDLE, ModifierFlag::COMMAND_L,
+       KeyCode::H, ModifierFlag::COMMAND_L 
+     </autogen>
+  </item>
+  <item>
+     <name>Windows Button plus Middle Click to Close the Tab (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.leftmodb</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <only>SAFARI, FIREFOX, GOOGLE_CHROME</only>
+     <autogen>
+       __PointingButtonToKey__
+       PointingButton::MIDDLE, ModifierFlag::COMMAND_L,
+       KeyCode::W, ModifierFlag::COMMAND_L 
+     </autogen>
+  </item>
+  <item>
+     <name>Mouse Middle Button to Launchpad (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_middle</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <autogen>
+       __KeyToKey__
+       PointingButton::MIDDLE,
+       KeyCode::LAUNCHPAD
+     </autogen>
+  </item>
+  <item>
+     <name>Slide Up to Previous Desktop (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.slide_up</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only> 
+     <autogen>
+       __KeyToKey__
+       KeyCode::DELETE, ModifierFlag::COMMAND_L,
+       KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L
+     </autogen>
+  </item>
+  <item>
+     <name>Slide Down to Next Desktop (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.slide_down</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <autogen>
+       __KeyToKey__
+       KeyCode::TAB, ModifierFlag::COMMAND_L,
+       KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L
+     </autogen>
+  </item>
+  q<item>
+     <name>Double Click Windows Button to Mission Control (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.win_buttond</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <autogen>
+      __DoublePressModifier__
+      KeyCode::COMMAND_L,
+
+      @begin
+      KeyCode::COMMAND_L,
+      @end
+
+      @begin
+      KeyCode::MISSION_CONTROL,
+      @end
+    </autogen>
+  </item>
+  <item>
+     <name>Windows Key plus Scroll Up to Increase Volume (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_up</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only> 
+     <autogen>
+       __ScrollWheelToKey__
+       ScrollWheel::UP, ModifierFlag::COMMAND_L, 
+       ConsumerKeyCode::VOLUME_UP
+     </autogen>
+  </item>
+  <item>
+     <name>Windows Key plus Scroll Down to Decrease Volume (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_down</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only> 
+     <autogen>
+       __ScrollWheelToKey__
+       ScrollWheel::DOWN, ModifierFlag::COMMAND_L, 
+       ConsumerKeyCode::VOLUME_DOWN
+     </autogen>
+  </item>
+  <item>
+     <name>Windows Button plus Scroll Right to Next Tab (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_right.firefox</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <only>GOOGLE_CHROME, FIREFOX</only>
+     <autogen>
+       __ScrollWheelToKey__
+       ScrollWheel::RIGHT, ModifierFlag::COMMAND_L,
+       KeyCode::TAB, ModifierFlag::CONTROL_L 
+     </autogen>
+  </item>
+  <item>
+     <name>Windows Button plus Scroll Left to Previous Tab (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_left.firefox</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <only>GOOGLE_CHROME, FIREFOX</only>
+     <autogen>
+       __ScrollWheelToKey__
+       ScrollWheel::LEFT | ModifierFlag::COMMAND_L,
+       KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L
+     </autogen>
+  </item>
+  <item>
+     <name>Windows Button plus Scroll Right to Next Tab in Safari (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_right</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <only>SAFARI</only> 
+     <autogen>
+       __ScrollWheelToKey__
+       ScrollWheel::RIGHT | ModifierFlag::COMMAND_L,
+       KeyCode::CURSOR_RIGHT | ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+     </autogen>
+  </item>
+  <item>
+     <name>Windows Button plus Scroll Left to Previous Tab in Safari (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_left</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <only>SAFARI</only>
+     <autogen>
+       __ScrollWheelToKey__
+       ScrollWheel::LEFT | ModifierFlag::COMMAND_L,
+       KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+     </autogen>
+  </item>
+  <item>
+     <name>Scroll Left to go Back (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_left.mod</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <only>SAFARI, GOOGLE_CHROME, FIREFOX</only>
+     <autogen>
+       __ScrollWheelToKey__
+       ScrollWheel::LEFT, 
+       KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L
+     </autogen>
+  </item>
+  <item>
+     <name>Scroll Right to go Forward (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_rightmod</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <only>SAFARI, GOOGLE_CHROME, FIREFOX</only>
+     <autogen>
+       __ScrollWheelToKey__
+       ScrollWheel::RIGHT,
+       KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
+     </autogen>
+  </item>
+  <item>
+     <name>Scroll Right to Previous Page in Preview - Natural scolling like (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_right.preview</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <only>PREVIEW, WORD</only> 
+     <autogen>
+       __ScrollWheelToKey__
+       ScrollWheel::RIGHT, 
+       KeyCode::CURSOR_LEFT
+     </autogen>
+  </item>
+  <item>
+     <name>Scroll Left to Next Page in Preview - Natural Scrolling like (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_left.preview</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <only>PREVIEW, WORD</only>
+     <autogen>
+       __ScrollWheelToKey__
+       ScrollWheel::LEFT,
+       KeyCode::CURSOR_RIGHT
+     </autogen>
+   </item>
+</root>
