@@ -4,6 +4,14 @@ modified by adrianhuang, midnightsalesman, original by user inceax
 -->
 <?xml version="1.0"?>
     <root>
+  <appdef>
+    <appname>INTELLIJ</appname>
+    <equal>com.jetbrains.intellij</equal>
+  </appdef>
+  <appdef>
+    <appname>CHROME</appname>
+    <equal>com.google.Chrome</equal>
+  </appdef>
         <devicevendordef>
             <vendorname>MICROSOFT</vendorname>
             <vendorid>0x045e</vendorid>
@@ -67,6 +75,31 @@ modified by adrianhuang, midnightsalesman, original by user inceax
        KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L
      </autogen>
         </item>
+
+
+        <item>
+            <name>Scroll Left to Backward in Intellij IDEA (Microsoft Sculpt Comfort Mouse)</name>
+            <identifier>com.microsoft.mouse.sculpt_comfort.scroll_left.intellij</identifier>
+            <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+            <only>INTELLIJ,CHROME</only>
+            <autogen>
+                __ScrollWheelToKey__
+       ScrollWheel::LEFT,
+       KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L
+     </autogen>
+        </item>
+        <item>
+            <name>Scroll Right to Forward in Intellij IDEA (Microsoft Sculpt Comfort Mouse)</name>
+            <identifier>com.microsoft.mouse.sculpt_comfort.scroll_right.intellij</identifier>
+            <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+            <only>INTELLIJ,CHROME</only>
+            <autogen>
+                __ScrollWheelToKey__
+       ScrollWheel::RIGHT,
+       KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L
+     </autogen>
+        </item>
+
         <item>
             <name>Scroll Left to Backward Space(Microsoft Sculpt Comfort Mouse)</name>
             <identifier>com.microsoft.mouse.sculpt_comfort.scroll_leftspace</identifier>
