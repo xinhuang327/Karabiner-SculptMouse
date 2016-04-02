@@ -4,4 +4,4 @@ Microsoft Sculpt Comfort Mouse Binding for OSX (using Karabiner). Modified by ad
 * Slide Up to switch to right desktop space
 * Slide Down to switch to left desktop space
 * Press Windows button to open Mission Control
-* Other rules are not used.
+* Use horizontal scroll to navigation back and forward in IDE / Chrome
