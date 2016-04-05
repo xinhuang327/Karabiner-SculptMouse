@@ -1,6 +1,8 @@
 <!--
 Microsoft Sculpt Comfort Mouse Binding for OSX (using Karabiner)
 modified by adrianhuang, midnightsalesman, original by user inceax
+
+
 -->
 <?xml version="1.0"?>
     <root>
@@ -11,6 +13,10 @@ modified by adrianhuang, midnightsalesman, original by user inceax
   <appdef>
     <appname>CHROME</appname>
     <equal>com.google.Chrome</equal>
+  </appdef>
+  <appdef>
+    <appname>XCODE</appname>
+    <equal>com.apple.dt.Xcode</equal>
   </appdef>
         <devicevendordef>
             <vendorname>MICROSOFT</vendorname>
@@ -37,6 +43,26 @@ modified by adrianhuang, midnightsalesman, original by user inceax
             <autogen>
                 __KeyToKey__
        KeyCode::TAB, ModifierFlag::CONTROL_L,
+       KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L
+     </autogen>
+        </item>
+        <item>
+            <name>NEW Slide Up to Backward (Microsoft Sculpt Comfort Mouse)</name>
+            <identifier>com.microsoft.mouse.sculpt_comfort.slide_up_new</identifier>
+            <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+            <autogen>
+                __KeyToKey__
+       PointingButton::BUTTON5,
+       KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L
+     </autogen>
+        </item>
+        <item>
+            <name>NEW Slide Down to Forward (Microsoft Sculpt Comfort Mouse)</name>
+            <identifier>com.microsoft.mouse.sculpt_comfort.slide_down_new</identifier>
+            <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+            <autogen>
+                __KeyToKey__
+       PointingButton::BUTTON4,
        KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L
      </autogen>
         </item>
@@ -97,6 +123,43 @@ modified by adrianhuang, midnightsalesman, original by user inceax
                 __ScrollWheelToKey__
        ScrollWheel::RIGHT,
        KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L
+     </autogen>
+        </item>
+
+
+        <item>
+            <name>Middle Button in XCODE (Microsoft Sculpt Comfort Mouse)</name>
+            <identifier>com.microsoft.mouse.sculpt_comfort.middle_button.xcode</identifier>
+            <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+            <only>XCODE</only>
+            <autogen>
+                __KeyToKey__
+       PointingButton::MIDDLE,
+       PointingButton::LEFT, ModifierFlag::COMMAND_L
+     </autogen>
+        </item>
+
+
+        <item>
+            <name>Scroll Left to Backward in XCODE (Microsoft Sculpt Comfort Mouse)</name>
+            <identifier>com.microsoft.mouse.sculpt_comfort.scroll_left.xcode</identifier>
+            <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+            <only>XCODE</only>
+            <autogen>
+                __ScrollWheelToKey__
+       ScrollWheel::LEFT,
+       KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+     </autogen>
+        </item>
+        <item>
+            <name>Scroll Right to Forward in XCODE (Microsoft Sculpt Comfort Mouse)</name>
+            <identifier>com.microsoft.mouse.sculpt_comfort.scroll_right.xcode</identifier>
+            <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+            <only>XCODE</only>
+            <autogen>
+                __ScrollWheelToKey__
+       ScrollWheel::RIGHT,
+       KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
      </autogen>
         </item>
 
